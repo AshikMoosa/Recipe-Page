@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 1em;
+    background: white;
+    font-family: 'Montserrat';
+}
+
+.main-head {
+
+
+    h1 {
+        font-family: 'Playfair Display';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 15px;
+        
+        padding-bottom: 1em;
+        
+    }
+    
+}
+
+.hero {
+    img {
+        width: 100%;
+    }
+}
+
+.card-section {
+
+    .card-list {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        list-style: none;
+        padding: 0;
+        text-transform: uppercase;
+        img {
+            height: 14px;
+            width: 14px;
+            float: left;
+            padding-top: 8pt;
+            padding-right: 2pt;
+           
+        }
+        
+        .heading {
+            font-size: 8px;
+            font-weight: 700;
+            //line-height: 9.75px;
+            color:#BDBDBD;
+            
+        }
+
+        .sub-heading {
+            font-size: 10px;
+            font-weight: 500;
+            //line-height: 12px;
+            color:#333333;
+            position: relative;
+            top: -0.8em;
+            left: 1.7em;
+            
+        }
+        .main-list {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            
+            span {
+                color: #F2994A;
+
+            }
+        } 
+    }   
+
+}
+
+.ingredients-section {
+    
+    h2 {
+        font-family: 'Playfair Display';
+        font-size: 18px;
+        line-height: 23.99px;
+        color: #333333;
+    }
+
+    h3 {
+        font-family: 'Playfair Display';
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 21.33px;
+        color: #333333;
+    }
+    
+    form {
+       
+        label {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 25px;
+            color: #333333;
+            position: relative;
+            top: -5px;
+            
+            span {
+                font-weight: bold;
+            }
+        }
+      
+    
+        input {
+            width: 21px;
+            height: 21px;
+            margin-right: 10px;
+        }
+    }
+    
+}
+
+.instructions-section {
+
+    .instructions-list {
+        list-style: none;
+        padding: 0;
+        img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+    p {
+        position: relative;
+        margin-left: 3em;
+        margin-top: -2.2em;
+        span {
+            font-weight: bold;
+        }
+    }
+
+    h2 {
+        font-family: 'Playfair Display';
+        font-size: 18px;
+        line-height: 23.99px;
+        color: #333333;
+    }
+}
+
+.footer {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        padding: 0em 4em;
+    }
+    .card-section {
+        float: right;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        margin: 10px;
+        padding: 30px;
+        padding-right: 50px;
+        .card-list {
+            grid-template-columns: auto;
+            .main-list {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+        
+    }
+
+    .ingredients-section { 
+        width: 70%;
+    }
+
+    .instructions-section {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) { 
+    body {
+        padding: 0em 8em;
+    }
+}

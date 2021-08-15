@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 1em;
+  background: white;
+  font-family: 'Montserrat';
+}
+
+.main-head h1 {
+  font-family: 'Playfair Display';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.main-head h3 {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 15px;
+  padding-bottom: 1em;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.card-section .card-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.card-section .card-list img {
+  height: 14px;
+  width: 14px;
+  float: left;
+  padding-top: 8pt;
+  padding-right: 2pt;
+}
+
+.card-section .card-list .heading {
+  font-size: 8px;
+  font-weight: 700;
+  color: #BDBDBD;
+}
+
+.card-section .card-list .sub-heading {
+  font-size: 10px;
+  font-weight: 500;
+  color: #333333;
+  position: relative;
+  top: -0.8em;
+  left: 1.7em;
+}
+
+.card-section .card-list .main-list {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.card-section .card-list .main-list span {
+  color: #F2994A;
+}
+
+.ingredients-section h2 {
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  line-height: 23.99px;
+  color: #333333;
+}
+
+.ingredients-section h3 {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 21.33px;
+  color: #333333;
+}
+
+.ingredients-section form label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #333333;
+  position: relative;
+  top: -5px;
+}
+
+.ingredients-section form label span {
+  font-weight: bold;
+}
+
+.ingredients-section form input {
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+}
+
+.instructions-section .instructions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.instructions-section .instructions-list img {
+  width: 36px;
+  height: 36px;
+}
+
+.instructions-section p {
+  position: relative;
+  margin-left: 3em;
+  margin-top: -2.2em;
+}
+
+.instructions-section p span {
+  font-weight: bold;
+}
+
+.instructions-section h2 {
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  line-height: 23.99px;
+  color: #333333;
+}
+
+.footer {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 0em 4em;
+  }
+  .card-section {
+    float: right;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin: 10px;
+    padding: 30px;
+    padding-right: 50px;
+  }
+  .card-section .card-list {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .card-section .card-list .main-list {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .ingredients-section {
+    width: 70%;
+  }
+  .instructions-section {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    padding: 0em 8em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
